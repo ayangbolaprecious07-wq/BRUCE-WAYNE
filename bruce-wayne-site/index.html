@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bruce Wayne – Programmer and computer science student</title>
+  <meta name="description" content="Bruce Wayne is a computer science student and programmer. See his projects and get in touch.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top">Bruce Wayne</a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <h1 class="hero-name" aria-label="Bruce Wayne">
+          <span class="line"><span>Bruce</span></span>
+          <span class="line"><span>Wayne</span></span>
+        </h1>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="lede">
+              I'm a computer science student who builds software and likes knowing
+              why it works. Right now I'm looking for an internship where I can
+              write real code with a real team.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#projects">See my projects</a>
+              <a class="btn btn-text" href="mailto:bruce@example.com">Email me</a>
+            </div>
+          </div>
+
+          <dl class="now">
+            <div>
+              <dt>Studying</dt>
+              <dd>Computer science, third year</dd>
+            </div>
+            <div>
+              <dt>Building</dt>
+              <dd>A study tracker API in Python</dd>
+            </div>
+            <div>
+              <dt>Looking for</dt>
+              <dd>Summer internship, 2027</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+
+        <ul class="projects">
+          <li class="project">
+            <p class="project-year">2025</p>
+            <div class="project-body">
+              <h3><a href="#" rel="noopener">Tiny shell</a></h3>
+              <p>A Unix shell written in C with pipes, redirection and background jobs. Built to understand how processes really work.</p>
+            </div>
+            <p class="project-stack">C, POSIX</p>
+          </li>
+
+          <li class="project">
+            <p class="project-year">2025</p>
+            <div class="project-body">
+              <h3><a href="#" rel="noopener">Timetable planner</a></h3>
+              <p>A web app that turns a list of courses into a weekly timetable with no clashes. Used by my own course group.</p>
+            </div>
+            <p class="project-stack">JavaScript, Node.js, SQLite</p>
+          </li>
+
+          <li class="project">
+            <p class="project-year">2024</p>
+            <div class="project-body">
+              <h3><a href="#" rel="noopener">Study tracker API</a></h3>
+              <p>A REST API for logging study sessions, with token login and weekly summaries.</p>
+            </div>
+            <p class="project-stack">Python, FastAPI, PostgreSQL</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <h2 id="about-title">About</h2>
+
+        <div class="about-body">
+          <p>
+            I like small, readable programs and the ideas underneath them:
+            how a computer runs a process, how a database finds a row, why one
+            algorithm is faster than another. Outside class I build side
+            projects and read other people's source code to learn how they
+            solve problems.
+          </p>
+
+          <dl class="skills">
+            <div>
+              <dt>Languages</dt>
+              <dd>Python, C, JavaScript, Java, SQL</dd>
+            </div>
+            <div>
+              <dt>Web</dt>
+              <dd>HTML, CSS, React, Node.js</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Git, Linux, Docker, VS Code</dd>
+            </div>
+            <div>
+              <dt>Course topics</dt>
+              <dd>Algorithms, operating systems, databases</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container about-grid">
+        <h2 id="contact-title">Contact</h2>
+
+        <div class="contact-body">
+          <p>
+            I'm open to internships and small freelance projects. Email is the
+            quickest way to reach me.
+          </p>
+
+          <p class="email-row">
+            <a class="email" id="email-link" href="mailto:bruce@example.com">bruce@example.com</a>
+            <button class="btn btn-outline" id="copy-email" type="button">Copy email</button>
+            <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+          </p>
+
+          <ul class="links">
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Bruce Wayne</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
